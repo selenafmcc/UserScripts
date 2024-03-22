@@ -1264,8 +1264,8 @@ const STAMP_LIST = {
         "list": [
             { position: 1, name: "Yooyu Trading Card", img: "yooyu_tradiingcard.gif", rarity: "r101" },
             { position: 2, name: "Altador Cup Collectable Card", img: "ac_collectible_card.gif", rarity: "r101" },
-            { position: 3, name: "No Stamp", img: "", rarity: "" },
-            { position: 4, name: "No Stamp", img: "", rarity: "" },
+            { position: 3, name: "Reina Collectable Card", img: "reina_collectable_card.gif", rarity: "r101" },
+            { position: 4, name: "Jelly Chia Goalie Card", img: "card_jellychia_goalie.gif", rarity: "r101" },
             { position: 5, name: "No Stamp", img: "", rarity: "" },
             { position: 6, name: "No Stamp", img: "", rarity: "" },
             { position: 7, name: "No Stamp", img: "", rarity: "" },
