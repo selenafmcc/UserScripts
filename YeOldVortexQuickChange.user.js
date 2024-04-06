@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Ye Olde Fishing Vortex Quick Change
+// @name         Ye Olde Fishing Vortex quick pet change
 // @namespace    http://tampermonkey.net/
 // @version      2024-04-06
 // @description  allows you to change pets in Ye Olde Fishing Vortex
@@ -9,39 +9,53 @@
 // @grant        none
 // ==/UserScript==
 
-// HI! DON'T BE INTIMIDATED BY THE CODE!! COMMENTS LIKE THIS WILL TELL YOU WHAT TO CHANGE!!! (you'll mostly want to check out lines 28 through 32 though lol)
-
 (function() {
     'use strict';
-    // Find button
-    var targetButton = $("button:contains('Cast Your Line Again')");
 
-    // Create a container for the pet images
-    var buttonContainer = $("<div></div>").css({
-        "text-align": "center", // Center div lmao
-        "margin-top": "10px",
-    });
+    var pets = [];
+    $.ajax({
+        url: "https://www.neopets.com/quickref.phtml", // Shoutouts to Luxittarius
+        method: "GET",
+        success: function(data) {
+            console.log("succesful query")
+            $(data).find(".pet_toggler img").each(function() {
+                let name = $(this).attr("title");
+                let image = $(this).attr("style").split("'")[1];
+                pets.push({name: name, image: image});
+            });
+            console.log(pets)
 
-    // Append container after "Cast Your Line Again"
-    targetButton.after(buttonContainer);
+            // Find button
+            var targetButton = $("button:contains('Cast Your Line Again')");
 
-    // Append the buttons to the container
-    // HI FOLKS! THIS IS WHERE YOU'RE SUPPOSED TO EDIT AND ADD YOUR PETS! CHANGE THE HREF URL TO new_active_pet=YOUR PETS NAME!
-    // YOU CAN ALSO CHANGE THE PIC SOURCE TO WHATEVER YOU WANT TO! I USED MY QUICKREF PICS! I'LL SHOW HOW TO GET THEM ON THE GIT OR SOMETHING LMFAO
-    // DONT WANT TO LOOK FOR A PIC LINK? USE "https://www.google.com/s2/favicons?sz=64&domain=neopets.com"!
-    // HAVE MORE PETS? ADD ANOTHER <a id="petx"...> BLOCK! HAVE LESS? DELETE ONE! THE WORLD IS YOUR OYSTER WHEN TALKING WITH COMPUTERS!
-    buttonContainer.append(
-        '<a id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=YOUR PETS NAME" target="_blank"><img id="petimg1" src="YOUR PIC HERE" style="margin-left: 10px;"></a>',
-        '<a id="pet2" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=YOUR OTHER PETS NAME" target="_blank"><img id="petimg2" src="YOUR PIC HERE" style="margin-left: 10px;"></a>'
-    );
+            // Create a container for the pet images
+            var buttonContainer = $("<div></div>").css({
+                "text-align": "center", // Center div lmao
+                "margin-top": "10px",
+            });
 
-    // Even listener for clicking, closes the newly opened tab
-    $("a[id^='pet']").on("click", function() {
-        var newTab = window.open($(this).attr("href"), "_blank");
-        setTimeout(function() {
-            newTab.close();
-        }, 200); // delay in milliseconds
-        return false;
+            // Append container after "Cast Your Line Again"
+            targetButton.after(buttonContainer);
+
+            // Create as many buttons as there are pets, use name and image attributes
+            for (let i = 0; i < pets.length; i++){
+                console.log(pets[i].name);
+                buttonContainer.append('<a id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=' + pets[i].name + '" target="_blank"><img id="petimg1" src="' + pets[i].image + '" style="margin-left: 10px;"></a>')
+            }
+
+            // Add event listener to close the new tab after a delay
+            $("a[id^='pet']").on("click", function() {
+                var newTab = window.open($(this).attr("href"), "_blank");
+                setTimeout(function() {
+                    newTab.close();
+                }, 200); // This is the delay in milisecs, no idea if it can be shorter
+                return false; // Prevent default link behavior
+            });
+
+        }
+
+
     });
 
 })();
+
