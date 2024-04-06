@@ -17,7 +17,6 @@
         url: "https://www.neopets.com/quickref.phtml", // Shoutouts to Luxittarius
         method: "GET",
         success: function(data) {
-            console.log("succesful query")
             $(data).find(".pet_toggler img").each(function() {
                 let name = $(this).attr("title");
                 let image = $(this).attr("style").split("'")[1];
