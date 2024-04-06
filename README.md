@@ -1,15 +1,11 @@
 # Userscrips galore! 
 
-mainly keeping stamp helper up to date lmfao, hope to make some useful scripts
+mainly keeping stamp helper up to date lmfao, hope to make some other useful scripts
 
-### How to get my pet's quickref pic
+### Stamp album helper:
 
-in quickref look at the pages source code, then look for active_pet, you should get somewhere that look like this
+Shows not owned stamps in their respective places even if they're not in your collection, great work by Eat Wooloos As Mutton.
 
-![image](https://github.com/conceptoto/UserScripts/assets/50333515/b3c573a4-6f10-48ba-9739-9793ce4ebcfc)
+### Ye Olde Vortex quick change:
 
-in here, we are interested in the style tag
-
-![image](https://github.com/conceptoto/UserScripts/assets/50333515/182f6cf7-685e-449b-bb49-a10484823085)
-
-those "background-image"s are what we're after 
+Shows links to change active pet in the "cast again?" screen, clicking the pet fishes for you.
