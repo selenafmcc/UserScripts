@@ -12,6 +12,12 @@
 (function() {
     'use strict';
 
+    const diffpettext = document.createElement('h3');
+    diffpettext.style.fontFamily = "'MuseoSansRounded700', 'Arial', sans-serif";
+    diffpettext.style.textAlign = 'center';
+    diffpettext.textContent = "Cast with a different pet?";
+
+
     var pets = [];
     $.ajax({
         url: "https://www.neopets.com/quickref.phtml", // Shoutouts to Luxittarius
@@ -35,7 +41,9 @@
             });
 
             // Append container after "Cast Your Line Again"
-            targetButton.after(buttonContainer);
+            targetButton.parent().after(buttonContainer);
+            targetButton.parent().after(diffpettext);
+
 
             // Create as many buttons as there are pets, use name and image attributes
             for (let i = 0; i < pets.length; i++){
