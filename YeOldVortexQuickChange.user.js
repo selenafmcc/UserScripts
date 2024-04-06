@@ -17,11 +17,13 @@
         url: "https://www.neopets.com/quickref.phtml", // Shoutouts to Luxittarius
         method: "GET",
         success: function(data) {
+            console.log("succesful query")
             $(data).find(".pet_toggler img").each(function() {
                 let name = $(this).attr("title");
                 let image = $(this).attr("style").split("'")[1];
                 pets.push({name: name, image: image});
             });
+            console.log(pets)
 
             // Find button
             var targetButton = $("button:contains('Cast Your Line Again')");
@@ -37,6 +39,7 @@
 
             // Create as many buttons as there are pets, use name and image attributes
             for (let i = 0; i < pets.length; i++){
+                console.log(pets[i].name);
                 buttonContainer.append('<a id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=' + pets[i].name + '" target="_blank"><img id="petimg1" src="' + pets[i].image + '" style="margin-left: 10px;"></a>')
             }
 
@@ -45,6 +48,7 @@
                 var newTab = window.open($(this).attr("href"), "_blank");
                 setTimeout(function() {
                     newTab.close();
+                    location.reload(); // Reload the page after clicking on the pet
                 }, 200); // This is the delay in milisecs, no idea if it can be shorter
                 return false; // Prevent default link behavior
             });
