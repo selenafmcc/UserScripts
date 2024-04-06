@@ -9,7 +9,7 @@
 // @grant        none
 // ==/UserScript==
 
-// HI! DON'T BE INTIMIDATED BY THE CODE!! COMMENTS LIKE THIS WILL TELL YOU WHAT TO CHANGE!!! (you'll mostly want to check out lines 28 through 31 though lol)
+// HI! DON'T BE INTIMIDATED BY THE CODE!! COMMENTS LIKE THIS WILL TELL YOU WHAT TO CHANGE!!! (you'll mostly want to check out lines 28 through 32 though lol)
 
 (function() {
     'use strict';
@@ -28,6 +28,7 @@
     // Append the buttons to the container
     // HI FOLKS! THIS IS WHERE YOU'RE SUPPOSED TO EDIT AND ADD YOUR PETS! CHANGE THE HREF URL TO new_active_pet=YOUR PETS NAME!
     // YOU CAN ALSO CHANGE THE PIC SOURCE TO WHATEVER YOU WANT TO! I USED MY QUICKREF PICS! I'LL SHOW HOW TO GET THEM ON THE GIT OR SOMETHING LMFAO
+    // DONT WANT TO LOOK FOR A PIC LINK? USE "https://www.google.com/s2/favicons?sz=64&domain=neopets.com"!
     // HAVE MORE PETS? ADD ANOTHER <a id="petx"...> BLOCK! HAVE LESS? DELETE ONE! THE WORLD IS YOUR OYSTER WHEN TALKING WITH COMPUTERS!
     buttonContainer.append(
         '<a id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=YOUR PETS NAME" target="_blank"><img id="petimg1" src="YOUR PIC HERE" style="margin-left: 10px;"></a>',
