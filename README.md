@@ -8,4 +8,8 @@ Shows not owned stamps in their respective places even if they're not in your co
 
 ### Ye Olde Vortex quick change:
 
-Shows links to change active pet in the "cast again?" screen, clicking the pet fishes for you.
+Shows links to change active pet in the "Reel In Your Line" screen, clicking the pet changes your active.
+
+### Ye Olde Vortex quick change Legacy Version:
+
+Shows links to change active pet in the "Cast your line again?" screen, clicking the pet fishes for you with the selected pet, deemed too automatic by mods, don't DL unless you're smelly.
