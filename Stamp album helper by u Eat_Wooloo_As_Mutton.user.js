@@ -954,7 +954,7 @@ const STAMP_LIST = {
             { position: 20, name: "Recovered Skeith Collectable Charm", img: "twr_sta_skeith_collcharm.gif", rarity: "r101" },
             { position: 21, name: "Sloth Collectable Charm", img: "sta_sloth_charm.gif", rarity: "r96" },
             { position: 22, name: "Governor McGill Collectable Charm", img: "toy_y19haltot_mcgill_charm.gif", rarity: "r101" },
-            { position: 23, name: "The Darkest Faerie Collectable Charm", img: "twr_sta_tdf_collcharm.gif", rarity: "r101" },
+            { position: 23, name: "The Darkest Faerie Collectible Charm", img: "twr_sta_tdf_collcharm.gif", rarity: "r101" },
             { position: 24, name: "No Stamp", img: "", rarity: "" },
             { position: 25, name: "Game Controller Collectable Charm", img: "toy_ddy18_gamecontr_charm.gif", rarity: "r101" }
         ]
