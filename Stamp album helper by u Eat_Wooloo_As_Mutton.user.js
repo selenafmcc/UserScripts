@@ -1353,7 +1353,7 @@ const STAMP_LIST = {
         "album": "Grey",
         "list": [
             { position: 1, name: "Nostalgic Grey Draik Stamp", img: "stamp_grey_draik.gif", rarity: "r101" },
-            { position: 2, name: "No Stamp", img: "", rarity: "" },
+            { position: 2, name: "Grey Kari Charm", img: "fon_greykari_charm.gif", rarity: "r101" },
             { position: 3, name: "No Stamp", img: "", rarity: "" },
             { position: 4, name: "No Stamp", img: "", rarity: "" },
             { position: 5, name: "No Stamp", img: "", rarity: "" },
