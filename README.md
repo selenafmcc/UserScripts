@@ -13,3 +13,7 @@ Shows links to change active pet in the "Reel In Your Line" screen, clicking the
 ### Ye Olde Vortex quick change Legacy Version:
 
 Shows links to change active pet in the "Cast your line again?" screen, clicking the pet fishes for you with the selected pet, deemed too automatic by mods, don't DL unless you're smelly.
+
+### Turmy pet change
+
+Pretty much the same idea behind the vortex scripts but it shows petpets in the turmac screen, future improvements would be showing the petpet's names ala grave danger.
