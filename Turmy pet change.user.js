@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      2024-04-06
 // @description  allows you to change pets in the Turmaculus page
-// @author       toto (squeaktho)
+// @author       toto but it was gurase's idea
 // @match        https://www.neopets.com/medieval/turmaculus.phtml
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=neopets.com
 // @grant        none
@@ -57,7 +57,7 @@
             }
             console.log(buttonContainer)
 
-            // Add event listener to close the new tab after a delay
+            // Add event listener to close the new tab after a delay, recycled code is my best friend
             $("a[id^='pet']").on("click", function() {
                 var newTab = window.open($(this).attr("href"), "_blank");
                 setTimeout(function() {
