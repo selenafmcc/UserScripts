@@ -24,7 +24,7 @@
         method: "GET",
         success: function(data) {
             console.log("succesful query")
-            $(data).find(".hp-carousel-pet").each(function() { //596
+            $(data).find(".hp-carousel-pet").each(function() { //find petpet and owner data
                 let petpetImg = $(this).attr("data-petpetimg");
                 let petpetName = $(this).attr("data-petpet");
                 let ownName = $(this).attr("data-name");
@@ -41,7 +41,7 @@
                 "margin-top": "10px",
             });
 
-            // Append container after "Cast Your Line Again"
+            // Append container after wake up button
             targetButton.parent().after(buttonContainer);
             targetButton.parent().after(diffpettext);
 
