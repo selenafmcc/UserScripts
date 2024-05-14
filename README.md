@@ -4,7 +4,7 @@ mainly keeping stamp helper up to date lmfao, hope to make some other useful scr
 
 ### Stamp album helper:
 
-Shows not owned stamps in their respective places even if they're not in your collection, great work by Eat Wooloos As Mutton.
+Shows not owned stamps in their respective places even if they're not in your collection, great work by Eat Wooloos As Mutton, I'm just maintaining with new stamp releases.
 
 ### Ye Olde Vortex quick change:
 
@@ -17,4 +17,4 @@ Shows links to change active pet in the "Cast your line again?" screen, clicking
 ### Turmy pet change
 
 THIS WAS GURASE'S IDEA, ALL HAIL GURA
-Pretty much the same idea behind the vortex scripts but it shows petpets in the turmac screen, future improvements would be showing the petpet's names ala grave danger.
+Pretty much the same idea behind the vortex scripts but it shows petpets in the turmac screen, future improvements could be showing the petpet's names ala grave danger.
