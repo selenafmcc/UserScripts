@@ -16,4 +16,5 @@ Shows links to change active pet in the "Cast your line again?" screen, clicking
 
 ### Turmy pet change
 
+THIS WAS GURASE'S IDEA, ALL HAIL GURA
 Pretty much the same idea behind the vortex scripts but it shows petpets in the turmac screen, future improvements would be showing the petpet's names ala grave danger.
