@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Stamp album helper
 // @namespace    neopets
-// @version      2024.03.22
+// @version      2024.05.24
 // @description  Adds an info menu about your missing stamps
 // @author       EatWooloos
 // @match        *://www.neopets.com/stamps.phtml?type=album&page_id=*
@@ -1354,6 +1354,66 @@ const STAMP_LIST = {
         "list": [
             { position: 1, name: "Nostalgic Grey Draik Stamp", img: "stamp_grey_draik.gif", rarity: "r101" },
             { position: 2, name: "Grey Kari Charm", img: "fon_greykari_charm.gif", rarity: "r101" },
+            { position: 3, name: "No Stamp", img: "", rarity: "" },
+            { position: 4, name: "No Stamp", img: "", rarity: "" },
+            { position: 5, name: "No Stamp", img: "", rarity: "" },
+            { position: 6, name: "No Stamp", img: "", rarity: "" },
+            { position: 7, name: "No Stamp", img: "", rarity: "" },
+            { position: 8, name: "No Stamp", img: "", rarity: "" },
+            { position: 9, name: "No Stamp", img: "", rarity: "" },
+            { position: 10, name: "No Stamp", img: "", rarity: "" },
+            { position: 11, name: "No Stamp", img: "", rarity: "" },
+            { position: 12, name: "No Stamp", img: "", rarity: "" },
+            { position: 13, name: "No Stamp", img: "", rarity: "" },
+            { position: 14, name: "No Stamp", img: "", rarity: "" },
+            { position: 15, name: "No Stamp", img: "", rarity: "" },
+            { position: 16, name: "No Stamp", img: "", rarity: "" },
+            { position: 17, name: "No Stamp", img: "", rarity: "" },
+            { position: 18, name: "No Stamp", img: "", rarity: "" },
+            { position: 19, name: "No Stamp", img: "", rarity: "" },
+            { position: 20, name: "No Stamp", img: "", rarity: "" },
+            { position: 21, name: "No Stamp", img: "", rarity: "" },
+            { position: 22, name: "No Stamp", img: "", rarity: "" },
+            { position: 23, name: "No Stamp", img: "", rarity: "" },
+            { position: 24, name: "No Stamp", img: "", rarity: "" },
+            { position: 25, name: "No Stamp", img: "", rarity: "" }
+        ]
+    },
+    "46": {
+        "album": "Plushies",
+        "list": [
+            { position: 1, name: "No Stamp", img: "", rarity: "" },
+            { position: 2, name: "No Stamp", img: "", rarity: "" },
+            { position: 3, name: "No Stamp", img: "", rarity: "" },
+            { position: 4, name: "No Stamp", img: "", rarity: "" },
+            { position: 5, name: "No Stamp", img: "", rarity: "" },
+            { position: 6, name: "No Stamp", img: "", rarity: "" },
+            { position: 7, name: "No Stamp", img: "", rarity: "" },
+            { position: 8, name: "No Stamp", img: "", rarity: "" },
+            { position: 9, name: "No Stamp", img: "", rarity: "" },
+            { position: 10, name: "No Stamp", img: "", rarity: "" },
+            { position: 11, name: "No Stamp", img: "", rarity: "" },
+            { position: 12, name: "No Stamp", img: "", rarity: "" },
+            { position: 13, name: "No Stamp", img: "", rarity: "" },
+            { position: 14, name: "No Stamp", img: "", rarity: "" },
+            { position: 15, name: "No Stamp", img: "", rarity: "" },
+            { position: 16, name: "No Stamp", img: "", rarity: "" },
+            { position: 17, name: "No Stamp", img: "", rarity: "" },
+            { position: 18, name: "No Stamp", img: "", rarity: "" },
+            { position: 19, name: "No Stamp", img: "", rarity: "" },
+            { position: 20, name: "No Stamp", img: "", rarity: "" },
+            { position: 21, name: "No Stamp", img: "", rarity: "" },
+            { position: 22, name: "No Stamp", img: "", rarity: "" },
+            { position: 23, name: "No Stamp", img: "", rarity: "" },
+            { position: 24, name: "No Stamp", img: "", rarity: "" },
+            { position: 25, name: "No Stamp", img: "", rarity: "" }
+        ]
+    },
+    "47": {
+        "album": "Other V",
+        "list": [
+            { position: 1, name: "No Stamp", img: "", rarity: "" },
+            { position: 2, name: "No Stamp", img: "", rarity: "" },
             { position: 3, name: "No Stamp", img: "", rarity: "" },
             { position: 4, name: "No Stamp", img: "", rarity: "" },
             { position: 5, name: "No Stamp", img: "", rarity: "" },
