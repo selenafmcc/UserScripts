@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Stamp album helper
 // @namespace    neopets
-// @version      2024.05.24
+// @version      2024.06.06
 // @description  Adds an info menu about your missing stamps
 // @author       EatWooloos
 // @match        *://www.neopets.com/stamps.phtml?type=album&page_id=*
@@ -844,7 +844,7 @@ const STAMP_LIST = {
         "list": [
             { position: 1, name: "Circlet of the Deep", img: "she_circlet_thedeep.gif", rarity: "r75" },
             { position: 2, name: "Shell Comb", img: "gif_shell_groom.gif", rarity: "r86" },
-            { position: 3, name: "No Stamp", img: "", rarity: "" },
+            { position: 3, name: "Golden Koi of the Deep", img: "she_koi_thedeep.gif", rarity: "r87" },
             { position: 4, name: "Tiara of the Deep", img: "she_tiara_thedeep.gif", rarity: "r78" },
             { position: 5, name: "Shell Clutch", img: "gif_shell_clasp.gif", rarity: "r86" },
             { position: 6, name: "No Stamp", img: "", rarity: "" },
