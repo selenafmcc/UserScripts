@@ -17,7 +17,7 @@
     diffpettext.style.textAlign = 'center';
     diffpettext.textContent = "Send a different petpet?";
 
-
+    //Grab the petpets from neopets homepage :3
     var pets = [];
     $.ajax({
         url: "https://www.neopets.com/home/index.phtml", // Shoutouts to Luxittarius
@@ -69,6 +69,34 @@
 
         }
 
+
+    });
+
+
+    //Sese did this part tee hee hee
+    //Get recent Turmy times from ~Brownhownd
+    var todayTime; var dailyTitle;
+    $.ajax({
+        url: "https://www.neopets.com/~Brownhownd",
+        method: "GET",
+        success: function(data){
+            $(data).find(".title").each(function() {
+                if (dailyTitle=="Daily Due Up Times") {todayTime = $(this).html(); dailyTitle="Awake today at: ";}
+                else if ($(this).html() == "Daily Due Up Times") dailyTitle = $(this).html();
+            });
+            //Trim off the extra lines and whitespace, we only want the most recent one!
+            todayTime = todayTime.slice(0,todayTime.indexOf("<p>")).trim().replace(":"," at");
+            //console.log(todayTime);
+
+            //Find the Turmy Header and place the next wakeup time underneath!
+            var turmHeader = $("#turmaculus_container p:contains('wake him up??')");
+
+            var wakeUpTime = $("<p></p>");
+
+            wakeUpTime.append('His next wake up time is <b>' + todayTime + '</b> according to <a href="https://www.neopets.com/~Brownhownd"> this page</a>.');
+            turmHeader.after(wakeUpTime);
+
+        }
 
     });
 
