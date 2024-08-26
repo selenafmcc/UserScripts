@@ -52,10 +52,10 @@
             // Create as many buttons as there are pets, use name and image attributes
             for (let i = 0; i < ppList.length; i++){
                 if(typeof ppList[i].petpetimg !== 'undefined'){
-                    buttonContainer.append('<a title="' + ppList[i].petpetName + '" id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=' + ppList[i].ownName + '" target="_blank"><img id="petimg1" src="' + ppList[i].petpetimg + '" style="margin-left: 10px;"></a>')
+                    buttonContainer.append('<a id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=' + ppList[i].ownName + '" target="_blank"><img title="' +ppList[i].petpetName+ '" id="petimg1" src="' + ppList[i].petpetimg + '" style="margin-left: 10px;"></a>')
                 }
                 else{
-                    buttonContainer.append('<a title="' + ppList[i].ownName +' does not have a petpet..." id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=' + ppList[i].ownName + '" target="_blank"><img id="petimg1" src="https://images.neopets.com/halloween/gravedanger/poof.gif" style="margin-left: 10px;"></a>')
+                    buttonContainer.append('<a id="pet1" href="https://www.neopets.com/process_changepet.phtml?new_active_pet=' + ppList[i].ownName + '" target="_blank"><img title="' + ppList[i].ownName +' does not have a petpet..." id="petimg1" src="https://images.neopets.com/halloween/gravedanger/poof.gif" style="margin-left: 10px;"></a>')
                 }
             }
             console.log(buttonContainer)
